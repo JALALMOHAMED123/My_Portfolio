@@ -161,7 +161,27 @@ section {
 }
 
 /* PROFILE SECTION */
-
+.wave{
+  /* overflow: hidden; */
+  /* display: block; */
+  position: relative;
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  transform: scale(1, 1);
+}
+.wave::before
+{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  left: 0; 
+  height: 100px;
+  background: url(./assets/wave.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 0px;
+}
 #profile {
   display: flex;
   justify-content: center;
@@ -176,7 +196,7 @@ section {
   margin: auto 0;
 }
 .profile-img{
-    border-radius: 100%;
+    border-radius: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .section__text {
